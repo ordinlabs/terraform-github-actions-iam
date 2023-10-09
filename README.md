@@ -2,7 +2,7 @@ Github Actions IAM terraform module
 =====================================
 
 ```
-module composer_repo {
+module gha_iam {
   source = "git@github.com:ordinlabs/terraform-github-actions-iam.git"
   federated_principal_arn = data.terraform_remote_state.github_actions.outputs.oidc_arn
   github_repos = [
