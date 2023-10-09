@@ -1,0 +1,5 @@
+.idea
+.DS_Store
+*.nogit
+# Local .terraform directories
+.terraform
