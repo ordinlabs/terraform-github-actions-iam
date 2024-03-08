@@ -1,4 +1,4 @@
-Github Actions IAM terraform module
+Github Actions AWS IAM Terraform Module
 =====================================
 
 ```
