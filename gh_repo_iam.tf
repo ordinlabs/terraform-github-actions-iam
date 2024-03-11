@@ -13,7 +13,7 @@ resource aws_iam_role gh_repo_role {
           Action : "sts:AssumeRoleWithWebIdentity",
           Condition : {
             "StringLike" : {
-              "${var.github_oidc_host}:sub" : "repo:${each.key}:*"
+              "${var.github_oidc_host}:sub" : "repo:${each.key}:${var.github_oidc_claim}"
             },
             "StringEquals" : {
               "${var.github_oidc_host}:aud" : "sts.amazonaws.com"

@@ -15,6 +15,12 @@ variable github_oidc_host {
   default = "token.actions.githubusercontent.com"
 }
 
+variable github_oidc_claim {
+  type = string
+  default = "*"
+  description = "github claim for role assumption see: https://docs.github.com/en/actions/deployment/security-hardening-your-deployments/about-security-hardening-with-openid-connect#understanding-the-oidc-token"
+}
+
 variable github_repo_arn_var_name {
   type = string
   default = "AWS_OIDC_ROLE_ARN"
